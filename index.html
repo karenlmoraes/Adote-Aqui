@@ -4,35 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Adote Aqui!</title>
 </head>
 <body>
 
     <header>
-        <img src="./img/logo.png" alt="logo"></img>
+        <img class="logo" src="./img/logo.png" alt="logo"></img>
         
-        <nav>
-            <a href="" target="_blank">Home</a>
-            <a href="" target="_blank">Sobre</a>
-            <a href="" target="_blank">Contato</a>
+        <nav class="menu-superior">
+            <a class="menu-superior-links" href="">Home</a>
+            <a class="menu-superior-links" href="#sobre">Sobre</a>
+            <a class="menu-superior-links" href="#contato">Contato</a>
         </nav>
 
     </header>
 
     <main>
         
-        <section>
+        <section class="cont-1">
 
-            <h1>Adote aqui!</h1>
-            <p>Falando sobre os direitos dos animais</p>
-            <img src="./img/Nina Cachorro.jpeg" alt="Nina the dog">
+            <div class="cont-1-bloco">      
+                <h1 class="cont-1-titulo">ADOTE AQUI!</h1>
+                <p class="cont-1-paragrafo">Falando sobre os direitos dos animais</p>
+            </div> 
+
+            <img class="cont-1-img" src="./img/Nina Cachorro.jpeg" alt="Nina the dog">
 
         </section>
 
-        <section>
+        <section class="cont-2">
 
-            <h2>Sobre</h2>
-            <p>Nós somos uma ONG dedicada, que nasceu em 2000. ADOTE AQUI! descobriu inúmeras maneiras de fazer uma diferença positiva na vida e no bem-estar dos animais. Em um mundo ideal, todo ser humano seria compassivo o suficiente para dar uma mãozinha. Desde voluntariado a fazer uma doação, ou até mesmo se manter informado e defendê-los online, há muitas maneiras de se envolver. Saiba mais hoje</p>
+            <h2 id="sobre" class="cont-2-titulo">Sobre</h2>
+            <p class="cont-2-paragrafo">Nós somos uma ONG dedicada, que nasceu em 2000. ADOTE AQUI! descobriu inúmeras maneiras de fazer uma diferença positiva na vida e no bem-estar dos animais. Em um mundo ideal, todo ser humano seria compassivo o suficiente para dar uma mãozinha. Desde voluntariado a fazer uma doação, ou até mesmo se manter informado e defendê-los online, há muitas maneiras de se envolver. Saiba mais hoje</p>
 
         </section>
 
@@ -40,45 +44,58 @@
 
     <footer>
 
-        <div>
+        <div id="contato" class="contato">
 
-            <h3>Contato</h3>
-            <p>R. Barcelos Domingos, 58 - Campo Grande, Rio de Janeiro - RJ, 23080-020</p>
+            <h3 class="contato-titulo">Contato</h3>
+            <p class="contato-endereco">R. Barcelos Domingos, 58 - Campo Grande, Rio de Janeiro - RJ, 23080-020</p>
             <br>
-            <p>Tel 21 1234-5678</p>
-            <p>Email adoteaqui@contato.com</p>
+            <p class="contato-endereco">Tel 21 1234-5678</p>
+            <p class="contato-endereco">Email adoteaqui@contato.com</p>
 
         </div>
 
-        <div>
+        <div class="social">
 
-            <p>Acompanhe nas redes!</p>
-            <img src="./img/facebook.png" alt="face-logo"><a href="www.facebook.com" title="facebook">Facebook</a>
-            <img src="./img/instagram.png" alt="instagram-logo"><a href="www.instagram.com">Instagram</a>
-            <img src="./img/youtube.png" alt="youtube-logo"><a href="www.youtube.com">Youtube</a>
+            <section class="redes-sociais">
+                <p class="social-titulo">Acompanhe nas redes!</p><br>
+            </section>
+
+            <section class="facebook">  
+                <img id="face" class="social-logo" src="./img/facebook.png" alt="instagram-logo"><a id="face" class="social-links" href="www.facebook.com">Facebook</a>
+            </section> 
+
+            <section class="instagram">
+                <img class="social-logo" src="./img/instagram.png" alt="instagram-logo"><a class="social-links" href="www.instagram.com">Instagram</a>
+            </section>
+
+            <section class="youtube">
+                <img class="social-logo" src="./img/youtube.png" alt="youtube-logo"><a class="social-links" href="www.youtube.com">Youtube                            . </a>
+            </section>
         
         </div>
 
-        <div>
+        <div class="form">
 
-            <p>Ou nos deixe uma mensagem:</p>
-            <label for="nome"><strong>Nome:</strong></label>
-            <input type="text" name="nome" placeholder="Nome" required>
+            <p class="form-titulo"><strong>Ou nos deixe uma mensagem:</strong></p>
 
-            <label for="email"><strong>E-mail:</strong></label>
-            <input type="email" name="email" placeholder="E-mail" required>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Nome" required><br>
 
-            <label for="assunto"><strong>Assunto:</strong></label>
-            <input type="text" name="assunto" placeholder="Assunto">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="E-mail" required><br>
 
-            <label for="mensagem"><strong>Mensagem:</strong></label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="3" placeholder="Digite sua mensagem"></textarea>
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" placeholder="Assunto"><br>
 
-            <button>Enviar</button>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Digite aqui sua mensagem"></textarea><br>
+
+            <button class="botao">Enviar</button>
 
         </div>
-
     </footer>
-    
+    <div class="credito">
+    <p class="credits">Desenvolvido por Karen Moraes</p>
+    </div>
 </body>
 </html>

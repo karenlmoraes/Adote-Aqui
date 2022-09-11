@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Teko&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+/* Header  */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.menu-superior{
+    display: flex;
+    gap: 30px;
+}
+
+.menu-superior-links{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+}
+
+.menu-superior-links:hover{
+    color: #379CFE;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Conteúdo 1  */
+
+.cont-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.cont-1-titulo{
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+.cont-1-paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+
+}
+
+.cont-1-img{
+    height: 400px;
+    border-radius: 5%;
+}
+
+/* Conteúdo 2  */
+
+.cont-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20% 30% 30% 30%;
+}
+
+.cont-2-titulo{
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+}
+
+.cont-2-paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Rodapé  */
+
+footer{
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Endereço  */
+
+.contato{
+    width: 500px;
+    margin: 100px 0px 100px 50px;
+}
+
+.contato-titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contato-endereco{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+    color: white;
+    font-size: 14px;
+}
+
+/* Redes Sociais  */
+
+.social{
+    width: 500px;
+    margin: 100px 0px 100px 0px;
+}
+
+.social-titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.social-logo{
+    width: 30px;
+}
+
+.facebook, .instagram, .youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light 300;
+    font-size: 12px;
+    margin: 15px 0px;
+    gap: 10px;
+}
+
+.social-links{
+    color: white;
+}
+
+.social-links:hover{
+    color: #379CFE;
+    transition: 0.5s;
+}
+
+/* Formulário  */
+
+.form{
+    width: 500px;
+    margin: 100px 50px 100px 0px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-titulo{
+    margin-bottom: 15px;
+}
+
+.botao{
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 8%;
+}
+
+.botao:hover{
+    background-color: #379CFE;
+    transition: 0.5s;
+}
+
+.credits{
+    background-color: #2B2B2B;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
